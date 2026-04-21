@@ -467,7 +467,7 @@ AFRAME.registerComponent("teleport-to", {
     <a-scene
       renderer="antialias: true"
       vr-mode-ui="enabled: true"
-      cursor="rayOrigin: entity"
+      cursor="rayOrigin: mouse"
     >
     
       <a-assets>
@@ -1851,7 +1851,7 @@ AFRAME.registerComponent("teleport-to", {
         ></a-entity>
         <a-entity
           laser-controls="hand: left"
-          raycaster="objects: .clickable; far: 20; lineColor: cyan; lineOpacity: 0.5"
+          raycaster="objects: .teleportable; far: 20; lineColor: cyan; lineOpacity: 0.5"
         ></a-entity>
       </a-entity>
 
